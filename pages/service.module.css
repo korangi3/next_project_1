@@ -1,0 +1,109 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+.citizenContainer{
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 20px;
+}
+.citizenContainer a{
+    text-decoration: none;
+}
+
+.citizenChild{
+    display: grid;
+    grid-template-columns: 11rem 11rem 11rem;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 12px;
+}
+
+.iconBox{
+    height: 165px;
+    border-radius: 5px 5px;
+    text-align: center;
+    color: white;
+}
+.iconBox img{
+    height: 54px;
+    width: 54px;
+}
+.sIconBox{
+    height:145px;
+    width: 11rem;
+    padding-top: 20px;
+    transition: ease 0.5s;
+}
+
+.sIconBox:hover{
+    padding-top: 10px;
+}
+
+.prabaktaContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.prabakta img{
+    height: 120px;
+    width: 120px;
+}
+
+.prabakta h2{
+    font-size: medium;
+
+}
+
+.noticeContainer{
+    height: 50rem;
+}
+.noticeBox{
+    width: 100%;
+    border-radius: 5px 5px;
+}
+.noticeNav{
+    height: 41rem;
+    background-color: rgb(238,238,238);
+    border-radius: 5px 5px;
+}
+.noticeNav a{
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+.noticeBar{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: rgb(2,3,129);
+    font-size: 1.19rem;
+    font-weight: 700;
+    border-radius: 5px 5px 0 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .mainContainer{
+        display: block;
+    }
+
+    .citizenChild{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .iconBox{
+        text-align: center;
+    }
+
+    .noticeContainer{
+        margin-top: 15px;
+        width: 100%;
+    }
+   .noticeBar{
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+   } 
+  }
