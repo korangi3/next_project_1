@@ -1,11 +1,17 @@
 .mainContainer{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+}
+.mainContainer h2{
+    color: #535353;
+    font-weight: 700;
 }
 .citizenContainer{
+    display: inline-block;
     width: fit-content;
     padding-left: 2rem;
     padding-right: 20px;
+    vertical-align: top;
+    text-align: left;
 }
 .citizenContainer a{
     text-decoration: none;
@@ -14,8 +20,8 @@
 .citizenChild{
     display: grid;
     grid-template-columns: 11rem 11rem 11rem;
-    grid-column-gap: 1.3rem;
-    grid-row-gap: 12px;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 20px;
 }
 
 .iconBox{
@@ -56,14 +62,17 @@
 }
 
 .noticeContainer{
+    display: inline-block;
     height: 50rem;
+    vertical-align: top;
+    text-align: left;
 }
 .noticeBox{
     width: 100%;
     border-radius: 5px 5px;
 }
 .noticeNav{
-    height: 41rem;
+    min-height: 41rem;
     background-color: rgb(238,238,238);
     border-radius: 5px 5px;
 }
@@ -79,8 +88,32 @@
     font-size: 1.19rem;
     font-weight: 700;
     border-radius: 5px 5px 0 0;
+    padding-top: 10px;
 }
-
+.noticeContent{
+    padding-left: 1.5rem;
+    height: 37rem;
+    overflow-y: scroll;
+}
+.noticeContainer p{
+    color: rgb(156, 156, 156)
+}
+.noticeButton{
+    margin-top: 20px;
+    background-color: orange;
+    border-radius: 5px 5px;
+    height: 35px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    border: orange;
+    color: white;
+    width: 110px;
+    font-size: large;
+}
+.noticeButton:hover{
+    background-color: rgb(255, 188, 62);
+    transition-delay: 0.05s;
+}
 
 @media only screen and (max-width: 600px) {
     .mainContainer{
@@ -94,6 +127,11 @@
         text-align: center;
     }
     .iconBox{
+        width:100%;
+
+    }
+    .sIconBox{
+        width: 100%;
         text-align: center;
     }
 
